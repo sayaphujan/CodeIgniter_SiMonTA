@@ -1,0 +1,75 @@
+* {
+	padding:0px;
+	margin:0px;
+}
+
+body{
+	font-family:arial;
+	font-size:13px;
+}
+
+#kotakChat {
+	width:380px;
+	border:1px solid #f0f0f0;
+	margin:5px;
+}
+
+#kotakChat > h3 {
+	background-color:rgb(59, 89, 152);
+	padding:7px;
+	color:#fff;
+}
+
+#chat {
+	max-height:220px;
+	overflow-y:auto;
+	max-width:400px;
+}
+
+#chat > ul > li {
+	padding:3px;
+	clear:both;
+	padding:4px;
+	margin:10px 0px 5px 0px;
+	overflow:auto;
+}
+
+#pesanChat{
+	list-style:none
+	}
+
+#pesanChat > li > img { 
+	width:35px;
+	float:left;
+}
+
+#pesanChat > li > span {
+	width:300px;
+	float:left;
+	margin-left:5px
+}
+
+#dataChat {
+	margin:5px;
+	height:26px;
+	width:300px;
+	border:1px solid #CCC;
+	font-size:14px;
+	background:#ffffff;	
+	padding:3px;
+	border-radius:3px;
+}
+
+#kirim {
+	background:rgb(59, 89, 152);
+	color:#fff;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 5px;
+	padding: 6px;
+	border:1px solid #999;
+}

@@ -1,0 +1,21 @@
+<?php
+															$dos_id = $key->dospem_id;
+														
+															if($dos_id % 2 == 0){
+																//genap == P2
+																if($key->bimb_status=='Menunggu Diperiksa' or $key->bimb_status=='REVISI - P2'){
+													?>
+																<a href='<?php echo site_url('admin/bimbingan/edit/'.$key->lap_id);?>'><button class="btn btn-xs btn-flat btn-success btnbrg-edit"><i class="fa fa-edit"></i></button></a>
+													<?php		} else { ?>
+															<button class="btn btn-xs btn-flat btn-default btnbrg-edit"><i class="fa fa-edit"></i></button>
+													<?php	
+																}
+															}else{ 
+																if($key->bimb_status!='ACC'){
+													?>
+																<a href='<?php echo site_url('admin/bimbingan/edit/'.$key->lap_id);?>'><button class="btn btn-xs btn-flat btn-success btnbrg-edit"><i class="fa fa-edit"></i></button></a>
+													<?php		} else { ?>
+																	<button class="btn btn-xs btn-flat btn-default btnbrg-edit"><i class="fa fa-edit"></i></button>
+													<?php		}
+															} 
+													?>

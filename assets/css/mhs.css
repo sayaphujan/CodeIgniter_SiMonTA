@@ -1,0 +1,30 @@
+.profile {
+    background-color: #FF766C;
+    border: 1px solid #ff766c;
+}
+
+.profile img {
+    display: block;
+    border: 10px solid rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.profile p {
+    text-align: center;
+    color: #fff;
+}
+
+.list-group-item {
+    background-color: #fff;
+    border-radius: 0px !important;
+    border: 1px solid #DDD;
+}
+
+.list-group-item.active, .list-group-item:hover {
+    border-left: 3px solid #FF766C;
+    background-color: #F8F7F5;
+}
+
+/*Ignore this tag. It is to give space.*/
+#space {padding: 10px;}

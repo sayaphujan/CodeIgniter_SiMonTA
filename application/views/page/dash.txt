@@ -1,0 +1,32 @@
+for($k=0; $k<3; $k++){
+	foreach($dashb->result() as $dash3){
+		$bab4		= $dash3->bab4;
+		$bab5		= $dash3->bab5;
+		$bab6		= $dash3->bab6;
+		
+		$data3		= array($bab4, $bab5, $bab6);
+			if($data3[$k] != $stat){
+				echo"
+					<div class='col-sm-4'>
+					<div class='the-box'>
+						<div class=' text-center'>
+							<h3><img src='".base_url()."assets/img/lock.png' width='8%'>&nbsp;&nbsp;<strong>".strtoupper($nama3[$k])."</strong></h3>
+						</div>
+					</div>
+					</div>
+					";
+			}else{
+				echo"
+					<div class='col-sm-4'>
+					<a href='".site_url($link3[$k].'/kat/'.$doc3[$k])."'>
+						<div class='the-box'>
+							<div class=' text-center'>		
+								<h3><img src='".base_url()."assets/img/journal.png' width='8%'>&nbsp;&nbsp;<strong>".strtoupper($nama3[$k])."</strong></h3>
+							</div>
+						</div>
+					</a>
+					</div>
+					";
+			}
+	}
+}

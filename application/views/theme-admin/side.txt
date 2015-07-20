@@ -1,0 +1,52 @@
+<?php 
+	if ($level == '2'){
+?>				
+					<li><a href="#fakelink">User<i class="fa fa-angle-down right-icon"></i></a>
+						<ul>
+						<?php
+							foreach($user->result() as $row): 
+							echo "<li><a href='".site_url($row->menu_path)."'>$row->menu_description</a></li>";
+						endforeach;
+						?>
+						</ul>
+					</li>
+					<li><a href="#fakelink">Akademik<i class="fa fa-angle-down right-icon"></i></a>
+						<ul>
+						<?php
+							foreach($akademik->result() as $row): 
+							echo "<li><a href='".site_url($row->menu_path)."'>$row->menu_description</a></li>";
+							endforeach;
+						?>
+						</ul>
+					</li>
+<!--					
+					<li><a href="#fakelink">Pembimbing<i class="fa fa-angle-down right-icon"></i></a>
+						<ul>
+						<?php
+						/*	foreach($dosen->result() as $row): 
+							echo "<li><a href='".site_url($row->menu_path)."'>$row->menu_description</a></li>";
+							endforeach;*/
+						?>
+						</ul>
+					</li>
+					<li><a href="#fakelink">TA/Skripsi<i class="fa fa-angle-down right-icon"></i></a>
+						<ul>
+						<?php/*
+							foreach($ta->result() as $row): 
+							echo "<li><a href='".site_url($row->menu_path)."'>$row->menu_description</a></li>";
+							endforeach;*/
+						?>
+						</ul>
+					</li>-->
+					<li><a href="#fakelink">Berita<i class="fa fa-angle-down right-icon"></i></a>
+						<ul>
+						<?php
+							foreach($admin->result() as $row): 
+							echo "<li><a href='".site_url($row->menu_path)."'>$row->menu_description</a></li>";
+							endforeach;
+						?>
+						</ul>
+					</li>
+				</ul>
+			</div>
+<?php }

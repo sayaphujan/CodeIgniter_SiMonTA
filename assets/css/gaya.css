@@ -1,0 +1,11 @@
+body{}
+#kepala{background-color:#3B5998;padding-top:10;padding-bottom:2}
+#pesan{padding:2;position:relative;left:110;cursor:pointer}
+#notifikasi{background-color:transparent;color:#fff;font-size:12pt;position:relative;top:-4}
+#info{width:200px;padding:3;position:absolute;left:110;background-color:#efefef;z-index:1000;display:none}
+.info2{font-family:arial;font-size:10pt}
+#content{padding:10}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+a.home{color:white}
+#loading{height:50;display:none}

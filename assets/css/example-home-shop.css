@@ -1,0 +1,84 @@
+body{
+	font-family: 'Lato', sans-serif;
+	padding-top: 50px;
+	font-size: 16px;
+	color: #434A54;
+}
+.header{
+	position: relative;
+	text-align: center;
+}
+.navbar-brand			{font-weight: 700}
+footer					{padding: 30px 0;}
+
+.page-content{
+	padding: 30px 0;
+}
+.owl-carousel .item.full{
+	position: relative;
+}
+.owl-carousel .item.full .caption-text{
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	bottom: 5%;
+	padding: 15px;
+	display: inline-block;
+	background: rgba(1,1,1,0.8);
+}
+.owl-carousel .item.full .caption-text h1{
+	padding: 0 5px;
+	margin: 10px 0 30px;
+}
+.owl-carousel .item.full .caption-text h4{
+	margin-bottom: 20px;
+}
+#OwlprogressBar{
+	position: absolute;
+	bottom: 33px;
+	margin: 0;
+}
+h1.titel{
+	margin-bottom: 40px;
+}
+.the-box{
+	background: #E9573F;
+	color: #fff;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+.the-box h4{
+	color: #93210F;
+	font-weight: 700;
+}
+
+hr{
+	margin: 50px 0;
+}
+
+
+@media (max-width: 767px) {
+	.owl-carousel .item.full .caption-text{
+		left: 5%;
+		right: 5%;
+		padding: 10px;
+	}
+	.owl-carousel .item.full .caption-text h1{
+		margin: 5px 0 20px;
+		font-size: 30px;
+	}
+	.owl-carousel .item.full .caption-text h4{
+		font-size: 16px;
+	}
+}
+
+
+@media (max-width: 480px) {
+	.owl-carousel .item.full .caption-text h1{
+		margin: 5px 0 20px;
+		font-size: 22px;
+	}
+	.owl-carousel .item.full .caption-text h4{
+		display: none
+	}
+}
